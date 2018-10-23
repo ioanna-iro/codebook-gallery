@@ -16,8 +16,8 @@ output:
 
 ```{r setup}
 knitr::opts_chunk$set(
-  warning = TRUE, # show warnings during codebook generation
-  message = TRUE, # show messages during codebook generation
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
   error = TRUE, # do not interrupt codebook generation in case of errors,
                 # usually better for debugging
   echo = TRUE  # show R code
@@ -46,7 +46,7 @@ ptsd <- rio::import("https://osf.io/uv7fm/download", "sav")
 ```
 
 
-```{r prepare_codebook}
+```{r prepare_codebook, warning=FALSE, message=FALSE}
 
 
 codebook_data <- ptsd
@@ -73,7 +73,7 @@ codebook_data <- detect_scales(codebook_data)
 ```
 
 
-```{r}
+```{r metadata}
 metadata(codebook_data)$name <- "
 Current Posttraumatic Stress Disorder symptomatology distorts memory for past symptoms
 "
@@ -105,6 +105,6 @@ metadata(codebook_data)$distribution = list(
 
 
 
-```{r codebook}
+```{r codebook, warning=FALSE, message=FALSE}
 codebook(codebook_data)
 ```

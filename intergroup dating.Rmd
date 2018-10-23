@@ -16,8 +16,8 @@ output:
 
 ```{r setup}
 knitr::opts_chunk$set(
-  warning = TRUE, # show warnings during codebook generation
-  message = TRUE, # show messages during codebook generation
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
   error = TRUE, # do not interrupt codebook generation in case of errors,
                 # usually better for debugging
   echo = TRUE  # show R code
@@ -46,7 +46,7 @@ intergroup_dating <- rio::import("https://osf.io/btzku/download", "sav")
 ```
 
 
-```{r prepare_codebook}
+```{r prepare_codebook, warning = FALSE, message = FALSE}
 
 
 codebook_data <- intergroup_dating
@@ -121,6 +121,6 @@ metadata(codebook_data)$distribution = list(
 
 
 
-```{r codebook}
+```{r codebook, warning=FALSE, message=FALSE}
 codebook(codebook_data)
 ```
