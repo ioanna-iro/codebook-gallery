@@ -1,0 +1,11 @@
+---
+title: "Codebooks"
+
+output: html_document
+---
+
+[intergoup dating codebook](https://ioanna-iro.github.io/codebook-gallery/intergroup_dating.html)
+
+[PTSD codebook](https://ioanna-iro.github.io/codebook-gallery/PTSD.html)
+
+[Trauma treatment and Tetris codebook](https://ioanna-iro.github.io/codebook-gallery/Trauma_Treatment_and_Tetris.html)
