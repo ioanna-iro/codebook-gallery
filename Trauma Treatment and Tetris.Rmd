@@ -6,7 +6,7 @@ output:
     toc_depth: 4
     toc_float: true
     code_folding: 'hide'
-    self_contained: true
+    self_contained: false
   pdf_document:
     toc: yes
     toc_depth: 4
